@@ -1,8 +1,8 @@
 ## Description
 
-The total dataset can be downloaded from [this link](https://drive.google.com/open?id=1GZ1cRHRPFHK1EFcEZiklvatIE3LmCv1a) (~56Gb)
+The total dataset can be downloaded from [this link](https://drive.google.com/open?id=1pFkaLDqNadBO4lQFAzEPFv45JgLBLDkH) (~340Gb)
 
-To facilitate downloading we splited our dataset in 13 parts.
+To facilitate downloading we splited our dataset into 37 parts.
 
 <img src="imgs.jpg" width="90%">
 <img src="masks.jpg" width="90%">
