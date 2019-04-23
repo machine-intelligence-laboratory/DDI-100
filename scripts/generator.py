@@ -10,16 +10,17 @@ from .utils import get_image_from_box
 
 
 class Generator:
-    def __init__(self, pickle_path = None, dataset_path=None, book_paths=None):
+    def __init__(self, pickle_path=None, dataset_path=None, book_paths=None):
         """
         Class Generator implements simple random sample choice.
         One of the arguments must be specified.
 
-        :param dataset_path: str - dataset_path to full dataset
+        :param pickle_path: str - path to pickle file with image paths
+        :param dataset_path: str - path to full dataset
         :param book_paths: str - paths to book directories.
         """
         if dataset_path is None and book_paths is None and pickle_path is None:
-            raise ValueError("One of dataset_path or book_paths should be specified")
+            raise ValueError("At least one argument must be specified")
         if dataset_path is not None:
             book_paths = glob(f"{dataset_path}/*")
         if book_paths is not None:
