@@ -41,7 +41,7 @@ class Generator:
         path = choice(self.paths)
         img_path = Path(choice(self.paths))
         boxes_path = img_path.parent.parent.joinpath('gen_boxes').joinpath(img_path.stem + ".pickle")
-        mask_paths = sorted(img_path.parent.parent.joinpath('gen_masks').glob(img_path.stem + '*'))
+        mask_paths = sorted(img_path.parent.parent.joinpath('gen_masks').glob(img_path.stem + '_*'))
         with open(boxes_path, "rb") as f:
             data = pickle.load(f)
         img = cv2.imread(str(img_path), 0)
