@@ -1,6 +1,6 @@
 ## Description
 
-The total dataset can be downloaded from [this link](https://drive.google.com/drive/folders/15L14KyFoUHAqV_f1Jn-u20YYEYVH5u8Z?usp=sharing) (~340Gb)
+The total dataset can be downloaded from [this link](https://drive.google.com/drive/folders/15L14KyFoUHAqV_f1Jn-u20YYEYVH5u8Z?usp=sharing) (~300Gb)
 
 To facilitate downloading we splited our dataset into 37 parts.
 
