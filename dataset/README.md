@@ -27,7 +27,7 @@ Original images and boxes are numerated in pdf order.
 
 For every origin page some images with different distortions are generated. This is marked by adding underscore followed by number to the original page name.
 
-For example page number 12 is presented in dataset as "orig_imgs/12.png", its original boxes is in "orig_boxes/12.pkl". FIrst 2 distorted images of the page are "gen_imgs/12_0.png", "gen_imgs/12_1.png" and corresponding boxes are "gen_boxes/12_0.pickle", "gen_boxes/12_1.pickle". Masks obey the same naming rule with addition of "\_{n}", where n means mask number since more then one mask is created for every image. 0 mask corresponds to text, 1 mask - stamps.
+For example page number 12 is presented in dataset as "orig_imgs/12.png", its original boxes is in "orig_boxes/12.pkl". FIrst 2 distorted images of the page are "gen_imgs/12_0.png", "gen_imgs/12_1.png" and corresponding boxes are "gen_boxes/12_0.pickle", "gen_boxes/12_1.pickle". Masks obey the same naming rule with addition of "\_{n}", where n means mask number since more then one mask is created for every image. "0" mask corresponds to text, "1" mask - to stamps.
 
 # Box format
 Pickle file for every page represents python object with following structure:
