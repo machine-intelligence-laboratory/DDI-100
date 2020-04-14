@@ -6,3 +6,5 @@ In total, DDI-100 contains 99870 document images together with text masks, stamp
 Direct link and detailed description is in [dataset directory](https://github.com/machine-intelligence-laboratory/DDI-100/tree/master/dataset)
 
 In [scripts directory](https://github.com/machine-intelligence-laboratory/DDI-100/tree/master/scripts) you can find some python scripts with usefull functions and classes for working with dataset.
+
+Preprint can be found here: https://arxiv.org/abs/1912.11658
