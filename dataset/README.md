@@ -22,14 +22,14 @@ Every book folder incudes following:
 7. generated boxes (```gen_boxes/*.pickle```)
 8. generated masks (```gen_masks/*.png```)
 
-# Naming
+## Naming
 Original images and boxes are numerated in pdf order.
 
 For every origin page some images with different distortions are generated. This is marked by adding underscore followed by number to the original page name.
 
 For example page number 12 is presented in dataset as "orig_imgs/12.png", its original boxes is in "orig_boxes/12.pkl". FIrst 2 distorted images of the page are "gen_imgs/12_0.png", "gen_imgs/12_1.png" and corresponding boxes are "gen_boxes/12_0.pickle", "gen_boxes/12_1.pickle". Masks obey the same naming rule with addition of "\_{n}", where n means mask number since more then one mask is created for every image. "0" mask corresponds to text, "1" mask - to stamps.
 
-# Box format
+## Box format
 Pickle file for every page represents python object with following structure:
 ```
 [
@@ -47,4 +47,8 @@ Pickle file for every page represents python object with following structure:
    ...
 ]
 ```
-_Note:_ box coordinates presented in order `[[y, x], [y, x], [y, x], [y, x]]`, where [0, 0] corresponds to top left corner of the image.
+_Note:_ box coordinates presented in __y-x__ order `[[y, x], [y, x], [y, x], [y, x]]`, where [0, 0] corresponds to top left corner of the image.
+
+## Original image restoration
+During creation of the dataset, some pages of the original pdfs where removed due to inconsistent box allocation and then pages for renumbered.
+If you need to restore original pdf pages, you can compile them from original backgrounds and texts: `orig_backgrounds/*.png` and `orig_texts/*.png`
