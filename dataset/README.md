@@ -47,3 +47,4 @@ Pickle file for every page represents python object with following structure:
    ...
 ]
 ```
+_Note:_ box coordinates presented in order `[[y, x], [y, x], [y, x], [y, x]]`, where [0, 0] corresponds to top left corner of the image.
